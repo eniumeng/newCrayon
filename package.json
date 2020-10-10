@@ -2,7 +2,7 @@
   "name": "crayon",
   "version": "0.0.1",
   "description": "a colorful log library",
-  "main": "dist/index.js",
+  "main": "dist/crayon.min.js",
   "scripts": {
     "watch:lib": "NODE_ENV=development rollup -c ./rollup.config.js --watch",
     "watch:example": "NODE_ENV=example rollup -c ./rollup.config.js --watch",
