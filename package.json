@@ -1,6 +1,6 @@
 {
   "name": "newcrayon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a colorful log library",
   "main": "dist/crayon.min.js",
   "scripts": {
