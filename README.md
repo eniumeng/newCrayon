@@ -14,13 +14,15 @@
     npm install --save newcrayon
     ```
 
-    step 2: use log, warn or error method of crayon when necessary:
+    step 2: use debug, info, log, warn or error method of crayon when necessary:
 
     ```javascript
     import newCrayon from 'newcrayon'
 
 
     newCrayon.debug('This is a debug')
+
+    newCrayon.info('This is a info')
 
     newCrayon.log('This is a log')
 

@@ -38,8 +38,11 @@ const newCrayon = {
     if (this.closeDebug === true) {
       return
     } else {
-      console.log(...args)
+      console.debug(...args)
     }
+  },
+  info (...args) {
+    console.info(...args)
   },
   log (...args) {
     console.log(...args)
