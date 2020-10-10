@@ -1,7 +1,7 @@
-import crayon from '../src/index'
+import newCrayon from '../src/index'
 
-crayon.log('This is a log')
+newCrayon.log('This is a log')
 
-crayon.warn('This is a warn')
+newCrayon.warn('This is a warn')
 
-crayon.error('This is a error')
+newCrayon.error('This is a error')

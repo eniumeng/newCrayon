@@ -1,8 +1,8 @@
-# newcrayon
+# newCrayon
 
 1. introduction:
 
-    The newcrayon is a colorfull log library, which could be used both in nodejs and browser environment.
+    The newCrayon is a colorfull log library, which could be used both in nodejs and browser environment.
 
     This library will provide good-looking informations for developers.
 
@@ -17,9 +17,11 @@
     step 2: use log, warn or error method of crayon when necessary:
 
     ```javascript
-    crayon.log('This is a log')
+    import newCrayon from 'newcrayon'
 
-    crayon.warn('This is a warn')
+    newCrayon.log('This is a log')
 
-    crayon.error('This is a error')
+    newCrayon.warn('This is a warn')
+
+    newCrayon.error('This is a error')
     ```

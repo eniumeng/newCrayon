@@ -32,7 +32,7 @@ const colors = {
 
 const isInBrowser = typeof window === "object"
 
-const crayon = {
+const newCrayon = {
   log(...args) {
     console.log(...args)
   },
@@ -52,4 +52,4 @@ const crayon = {
   }
 }
 
-export default crayon
+export default newCrayon

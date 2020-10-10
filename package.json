@@ -1,8 +1,8 @@
 {
   "name": "newcrayon",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "a colorful log library",
-  "main": "dist/crayon.min.js",
+  "main": "dist/newcrayon.min.js",
   "scripts": {
     "watch:lib": "NODE_ENV=development rollup -c ./rollup.config.js --watch",
     "watch:example": "NODE_ENV=example rollup -c ./rollup.config.js --watch",
