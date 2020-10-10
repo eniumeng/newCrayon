@@ -33,17 +33,25 @@ const colors = {
 const isInBrowser = typeof window === "object"
 
 const newCrayon = {
-  log(...args) {
+  closeDebug: false,
+  debug (...args) {
+    if (this.closeDebug === true) {
+      return
+    } else {
+      console.log(...args)
+    }
+  },
+  log (...args) {
     console.log(...args)
   },
-  warn(...args) {
+  warn (...args) {
     if (isInBrowser) {
       console.warn(...args)
     } else {
       console.warn([colors.fg.Yellow, ...args, colors.Reset].join(''))
     }
   },
-  error(...args) {
+  error (...args) {
     if (isInBrowser) {
       console.error(...args)
     } else {

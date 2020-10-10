@@ -51,11 +51,21 @@
     }
   };
   var isInBrowser = (typeof window === "undefined" ? "undefined" : _typeof(window)) === "object";
-  var crayon = {
-    log: function log() {
-      var _console;
+  var newCrayon = {
+    closeDebug: false,
+    debug: function debug() {
+      if (this.closeDebug === true) {
+        return;
+      } else {
+        var _console;
 
-      (_console = console).log.apply(_console, arguments);
+        (_console = console).log.apply(_console, arguments);
+      }
+    },
+    log: function log() {
+      var _console2;
+
+      (_console2 = console).log.apply(_console2, arguments);
     },
     warn: function warn() {
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
@@ -63,9 +73,9 @@
       }
 
       if (isInBrowser) {
-        var _console2;
+        var _console3;
 
-        (_console2 = console).warn.apply(_console2, args);
+        (_console3 = console).warn.apply(_console3, args);
       } else {
         console.warn([colors.fg.Yellow].concat(args, [colors.Reset]).join(''));
       }
@@ -76,17 +86,19 @@
       }
 
       if (isInBrowser) {
-        var _console3;
+        var _console4;
 
-        (_console3 = console).error.apply(_console3, args);
+        (_console4 = console).error.apply(_console4, args);
       } else {
         console.error([colors.fg.Red].concat(args, [colors.Reset]).join(''));
       }
     }
   };
 
-  crayon.log('This is a log');
-  crayon.warn('This is a warn');
-  crayon.error('This is a error');
+  newCrayon.closeDebug = false;
+  newCrayon.debug('This is a debug');
+  newCrayon.log('This is a log');
+  newCrayon.warn('This is a warn');
+  newCrayon.error('This is a error');
 
 })));

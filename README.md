@@ -19,9 +19,20 @@
     ```javascript
     import newCrayon from 'newcrayon'
 
+
+    newCrayon.debug('This is a debug')
+
     newCrayon.log('This is a log')
 
     newCrayon.warn('This is a warn')
 
     newCrayon.error('This is a error')
     ```
+
+    when you set
+
+    ```javascript
+    newCrayon.closeDebug = true
+    ```
+
+    there will be no output with the method of newCrayon.debug()
